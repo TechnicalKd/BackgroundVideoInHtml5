@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+			font-family: 'kirandevkar';
+		}
+		header
+		{
+			width: 100%;
+			height: 100vh;
+			position: relative;
+		}
+
+		@font-face
+		{
+			font-family: 'kirandevkar';
+			src:url('Disco3.ttf') format('truetype');
+		}
+			#videoid
+			{
+				position: fixed;
+				z-index: -1;
+			}
+		#centerDiv
+		{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			color: white;
+			transform: translate(-50%,-50px);
+			text-align: center;
+			font-family: 'kirandevkar';
+			font-size: 2rem;
+			text-shadow: 2px 4px purple;
+		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		<div id="centerDiv">
+			<h1>Subscribe To my Channel</h1>
+			<button class="btn">Subscribe</button>
+		</div>
+       	
+       	<video autoplay loop muted id="videoid">
+       		<source src="video.mp4" type="video/mp4">
+       	</video>
+	</header>
+
+
+
+
+</body>
+</html>
